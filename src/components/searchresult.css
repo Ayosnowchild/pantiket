@@ -1,0 +1,81 @@
+.search-result-container {
+  display: flex;
+  flex-direction: column;
+  height: 460px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+}
+.search-result-container img {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.search-result-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+
+.search-details-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.search-details-sub-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+.title,
+.price {
+  font-weight: 600;
+  font-size: 24px;
+}
+.date,
+.address {
+  font-weight: 500;
+  font-size: 16px;
+}
+.attendees,
+.organizer {
+  font-weight: 400;
+  font-size: 14px;
+}
+@media screen and (min-width: 600px) {
+  .search-result-container {
+    flex-direction: row;
+    height: 224px;
+  }
+  .search-result-container img {
+    height: 100%;
+    width: 379px;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+  .search-result-details-container {
+    padding: 32px;
+  }
+  .search-details-title {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title,
+  .search-details-sub-div {
+    width: 660px;
+  }
+  .date {
+    margin-bottom: 16px;
+  }
+  .address {
+    margin-bottom: 24px;
+  }
+  .search-details-last-div {
+    display: flex;
+
+    width: 100%;
+    gap: 16px;
+  }
+  .attendees {
+    width: 50%;
+  }
+}

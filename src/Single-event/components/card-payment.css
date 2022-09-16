@@ -1,0 +1,146 @@
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.close-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #eff0fa;
+  border-radius: 8px;
+  border: none;
+}
+.container-title {
+  font-family: "Syne";
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #94248c;
+}
+.ticket-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+.ticket-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  height: max-content;
+}
+.ticket-type-group,
+.ticket-price-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.type-group,
+.price-group,
+.total-group {
+  display: flex;
+  justify-content: space-between;
+}
+.text-type-one {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a38;
+}
+.type-price {
+  color: #1a1a38;
+  opacity: 0.5;
+}
+.text-type-two {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1a1a38;
+}
+.payment-types {
+  display: flex;
+  gap: 8px;
+}
+.inactive-switch {
+  width: 14.4375rem;
+  height: 3.5rem;
+  font-family: "Syne";
+  color: rgba(51, 51, 51, 0.2);
+  font-weight: 700;
+  padding-top: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.active-switch {
+  border-bottom: 2px solid #94248c;
+  color: #333333;
+}
+.form-flex {
+  display: flex;
+  gap: 8px;
+}
+.flex-form-divs {
+  width: 49%;
+}
+@media screen and (min-width: 600px) {
+  .booking-container {
+    padding: 2.5rem;
+    width: 75%;
+    gap: 32px;
+  }
+  .ticket-form-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .ticket-form {
+    width: 55%;
+  }
+  .container-title {
+    font-size: 32px;
+  }
+  .ticket-summary {
+    width: 40%;
+    gap: 48px;
+  }
+  .inactive-switch {
+    width: 14.4375rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
+  .active-text {
+    font-size: 24px;
+  }
+  .inactive-text {
+    font-size: 24px;
+  }
+  .form-flex {
+    gap: 16px;
+  }
+  .flex-form-divs {
+    width: 48%;
+  }
+}

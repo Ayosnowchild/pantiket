@@ -1,0 +1,49 @@
+.event-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #fcfcfc;
+  border: 1px solid #d7dcf8;
+  border-radius: 16px;
+  margin: 0px 84px;
+}
+.details-heading {
+  font-family: "Syne";
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c3c90;
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.details-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1a1a38;
+}
+.venue-flex {
+  display: flex;
+  gap: 32px;
+}
+@media screen and (min-width: 600px) {
+  .event-description-container {
+    gap: 24px;
+    padding: 32px;
+    margin: 0px 253px;
+  }
+  .details-heading {
+    font-size: 24px;
+  }
+  .details-container {
+    gap: 8px;
+  }
+  .details-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

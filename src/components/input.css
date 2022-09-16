@@ -1,6 +1,7 @@
 .input-container {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 .input-container input {
   background: #f5f6f6;
@@ -14,3 +15,27 @@
   font-weight: 500;
   font-size: 1rem;
 }
+input::placeholder {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* .input-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-container label {
+	font-weight: 500;
+	font-size: 1rem;
+	color: #000000;
+}
+
+.input-container input {
+	background: #f5f6f6;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-radius: 0.5rem;
+	height: 3.5rem;
+	padding: 1rem;
+} */

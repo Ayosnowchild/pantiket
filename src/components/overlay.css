@@ -1,0 +1,16 @@
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.411);
+  width: 100%;
+  padding: 0 3rem;
+  position: absolute;
+}
+@media screen and (min-width: 600px) {
+  .overlay {
+    padding: 0 15.813rem;
+    height: 100vh;
+    position: fixed;
+  }
+}

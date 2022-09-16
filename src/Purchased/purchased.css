@@ -1,0 +1,156 @@
+/* * {
+  box-sizing: border-box;
+} */
+.purchased-news {
+  background: #fcfcfc;
+  border: 1px solid #d7dcf8;
+  border-radius: 16px;
+  margin: 32px 56px;
+  padding: 36px;
+  max-width: 100%;
+}
+.purchased-event-info {
+  padding: 0px 56px;
+}
+.tick-news {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #d7dcf8;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.tick-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0f5e9;
+  border-radius: 8px;
+  width: 28px;
+  height: 28px;
+}
+.tick-text {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1a1a38;
+}
+.set-for {
+  font-weight: 500;
+  font-size: 12px;
+  color: #1a1a38;
+  margin-bottom: 8px;
+}
+.event-name {
+  font-family: "Syne";
+  font-weight: 800;
+  font-size: 18px;
+}
+.purchased-item {
+  font-weight: 500;
+  font-size: 12px;
+}
+.ticket-id {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1a1a38;
+}
+.ticket-instruct {
+  font-weight: 400;
+  font-size: 14px;
+  color: #1a1a38;
+  margin-top: 16px;
+}
+.notice {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a38;
+}
+.purchased-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.date-flex {
+  display: flex;
+  gap: 12px;
+}
+.date-venue {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1a1a38;
+  margin-bottom: 5px;
+}
+.date-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #1a1a38;
+}
+.purchased-button-actions {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 32px 0px;
+  margin-left: 160px;
+  gap: 16px;
+}
+@media screen and (min-width: 600px) {
+  .purchased-news {
+    margin: 64px 256px;
+    padding: 64px;
+  }
+  .purchased-event-info {
+    padding: 0px 256px;
+  }
+  .tick-news {
+    gap: 16px;
+    padding-bottom: 30px;
+    margin-bottom: 32px;
+  }
+  .tick-container {
+    width: 35px;
+    height: 35px;
+  }
+  .tick-text {
+    font-size: 24px;
+  }
+  .event-name {
+    font-size: 32px;
+  }
+  .purchased-item {
+    font-size: 16px;
+  }
+  .ticket-id {
+    margin-top: 56px;
+    font-size: 24px;
+  }
+  .ticket-instruct {
+    font-size: 16px;
+  }
+  .notice {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
+  .purchased-flex {
+    display: flex;
+  }
+  .date-flex {
+    gap: 32px;
+  }
+  .date-venue {
+    margin-bottom: 8px;
+  }
+  .date-text {
+    font-size: 16px;
+  }
+  .purchased-button-actions {
+    display: flex;
+    flex-direction: row;
+    margin: 64px 460px;
+  }
+}

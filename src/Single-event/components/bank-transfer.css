@@ -1,0 +1,168 @@
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.close-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #eff0fa;
+  border-radius: 8px;
+  border: none;
+}
+.container-title {
+  font-family: "Syne";
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #94248c;
+}
+.payment-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.bank-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ticket-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  height: max-content;
+}
+.ticket-type-group,
+.ticket-price-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.type-group,
+.price-group,
+.total-group {
+  display: flex;
+  justify-content: space-between;
+}
+.text-type-one {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a38;
+}
+.type-price {
+  color: #1a1a38;
+  opacity: 0.5;
+}
+.text-type-two {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1a1a38;
+}
+.payment-types {
+  display: flex;
+  gap: 8px;
+}
+.card-payment {
+  padding: 8px;
+  background: #ffffff;
+}
+.bank-payment {
+  padding: 8px;
+  background: #ffffff;
+  border-bottom: 2px solid #94248c;
+}
+.card-text {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.2);
+}
+.bank-text {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+}
+.payment-instruction {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 14px;
+  color: #94248c;
+}
+.bank-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.bank-flex {
+  display: flex;
+  gap: 24px;
+}
+.bank-details-text {
+  width: 500%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+}
+@media screen and (min-width: 600px) {
+  .booking-container {
+    padding: 2.5rem;
+    width: 75%;
+    gap: 32px;
+  }
+  .payment-info-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .container-title {
+    font-size: 32px;
+  }
+  .ticket-summary {
+    width: 40%;
+    gap: 48px;
+  }
+  .card-payment {
+    padding: 16px;
+  }
+  .bank-payment {
+    padding: 16px;
+  }
+  .card-text {
+    font-size: 24px;
+  }
+  .bank-text {
+    font-size: 24px;
+  }
+  .ticket-form-container {
+    gap: 24px;
+  }
+  .payment-instruction {
+    font-size: 16px;
+  }
+  .bank-details {
+    gap: 16px;
+  }
+  .bank-details-text {
+    font-size: 16px;
+  }
+}
