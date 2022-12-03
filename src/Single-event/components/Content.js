@@ -3,12 +3,22 @@ import TicketCategory from "./TicketCategory";
 import "./content.css";
 // import CardPayment from "./CardPayment";
 // import BankTransfer from "./BankTransfer";
-import BookTicket from "./BookTicket";
-// import EventInfo from "./EventInfo";
+// import BookTicket from "./BookTicket";
+import EventDescription from "./EventDescription";
+import EventInfo from "./EventInfo";
 function Content({ setModal }) {
   return (
     <section className="main-container">
-      <div className="event-content-container">
+      <EventDescription
+        eventDescription={`The play, "Pelumi," is a musical love story that revolves around
+          Pelumi, a woman who was in a relationship with Adigun, a man with
+          direction and purpose, but felt pressured by her mother to find love
+          with someone else because of her mother's wealth and availability. You
+          won’t want to miss this show on this year valentine.`}
+        dateTime={"14th February, 2022"}
+        eventVenue="Oduduwa Hall, Obafemi Awolowo University, Ile-Ife, Osun State"
+      />
+      {/* <div className="event-content-container">
         <div className="event-info">
           <p className="info-title">Event Description</p>
           <p className="info-description">
@@ -32,7 +42,7 @@ function Content({ setModal }) {
             Oduduwa Hall, Obafemi Awolowo University, Ile-Ife, Osun State
           </p>
         </div>
-      </div>
+      </div> */}
 
       <div className="ticket-container">
         <p className="ticket-title">Get your Ticket</p>
@@ -64,8 +74,8 @@ function Content({ setModal }) {
           />
         </div>
       </div>
-      {/* <EventInfo /> */}
-      <BookTicket />
+      <EventInfo />
+      {/* <BookTicket /> */}
       {/* <CardPayment /> */}
       {/* <BankTransfer /> */}
     </section>

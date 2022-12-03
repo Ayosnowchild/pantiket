@@ -4,6 +4,7 @@ import HomePage from "./Home/HomePage";
 import Purchased from "./Purchased/Purchased";
 import Search from "./Search/Search";
 import SingleEvent from "./Single-event";
+import ConfirmTicket from "./ConfirmTicket/ConfirmTicket";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Route path="/event/:eventId" element={<SingleEvent />} />
           <Route path="/search" element={<Search />} />
           <Route path="/purchased" element={<Purchased />} />
+          <Route path="/confirm" element={<ConfirmTicket />} />
+          <Route path="/ticket/:ticketId" element={<ConfirmTicket />} />
         </Routes>
       </BrowserRouter>
     </>

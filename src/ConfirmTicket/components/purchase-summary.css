@@ -1,17 +1,13 @@
-/* * {
-  box-sizing: border-box;
-} */
 .purchased-news {
   background: #fcfcfc;
   border: 1px solid #d7dcf8;
   border-radius: 16px;
   margin: 32px 56px;
-  padding: 36px;
+  padding: 24px;
   max-width: 100%;
 }
 .purchased-event-info {
   padding: 0px 56px;
-  margin-top: 32px;
 }
 .tick-news {
   display: flex;
@@ -91,22 +87,13 @@
   font-size: 14px;
   color: #1a1a38;
 }
-.purchased-button-actions {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin: 32px 0px;
-  margin-left: 160px;
-  gap: 16px;
-}
 @media screen and (min-width: 600px) {
   .purchased-news {
     margin: 64px 256px;
-    padding: 64px;
+    padding: 36px;
   }
   .purchased-event-info {
     padding: 0px 256px;
-    margin-top: 64px;
   }
   .tick-news {
     gap: 16px;
@@ -149,10 +136,5 @@
   }
   .date-text {
     font-size: 16px;
-  }
-  .purchased-button-actions {
-    display: flex;
-    flex-direction: row;
-    margin: 64px 460px;
   }
 }

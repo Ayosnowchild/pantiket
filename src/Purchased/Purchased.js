@@ -2,7 +2,9 @@ import React from "react";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import PurchaseSummary from "../ConfirmTicket/components/PurchaseSummary";
 import Banner from "../Single-event/components/Banner";
+import EventDescription from "../Single-event/components/EventDescription";
 import EventInfo from "../Single-event/components/EventInfo";
 import "./purchased.css";
 
@@ -11,7 +13,7 @@ function Purchased() {
     <div className="single-event-container">
       <Navbar />
       <Banner />
-      <div className="purchased-news">
+      {/* <div className="purchased-news">
         <div className="tick-news">
           <div className="tick-container">
             <svg
@@ -58,10 +60,20 @@ function Purchased() {
             <p className="date-text">Oduduwa Hall, OAU, Ile-Ife, Osun State</p>
           </div>
         </div>
-      </div>
+      </div> */}
+      <PurchaseSummary titleState={true} />
       <div className="purchased-button-actions">
         <Button title={"Download Ticket"} variation="sec" />
         <Button title={"Share Event"} variation="pri" />
+      </div>
+      <div className="purchased-event-info">
+        <EventDescription
+          eventDescription={`The play, "Pelumi," is a musical love story that revolves around
+          Pelumi, a woman who was in a relationship with Adigun, a man with
+          direction and purpose, but felt pressured by her mother to find love
+          with someone else because of her mother's wealth and availability. You
+          won’t want to miss this show on this year valentine. `}
+        />
       </div>
       <div className="purchased-event-info">
         <EventInfo />

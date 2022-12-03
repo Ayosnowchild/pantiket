@@ -1,10 +1,10 @@
 .event-card-container {
   height: 28.75rem;
-
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   margin-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 .event-card-container img {
   height: 19.063rem;
@@ -36,7 +36,7 @@
 }
 @media screen and (min-width: 600px) {
   .event-card-container {
-    height: 28.75rem;
+    height: 29.75rem;
     width: 30%;
   }
 }

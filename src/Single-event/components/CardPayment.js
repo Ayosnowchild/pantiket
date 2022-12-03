@@ -3,13 +3,22 @@ import "./card-payment.css";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import BankTransfer from "./BankTransfer";
-function CardPayment() {
+import { useNavigate } from "react-router-dom";
+function CardPayment({ setModal }) {
   const [paymentMethod, setPaymentMethod] = useState("card");
+  const navigate = useNavigate();
+  function handleSubmit(event) {
+    event.preventDefault();
+    navigate("/event/1/purchase");
+  }
   return (
     <div className="booking-container">
       <div className="container-header">
         <p className="container-title">Make Payment</p>
-        <button className="close-icon">
+        <button
+          onClick={() => setModal((prevState) => !prevState)}
+          className="close-icon"
+        >
           <svg
             width="24"
             height="24"
@@ -54,7 +63,7 @@ function CardPayment() {
       </div>
       <div className="ticket-form-container">
         {paymentMethod === "card" ? (
-          <form className="ticket-form">
+          <form onSubmit={handleSubmit} className="ticket-form">
             <div className="form-input">
               <Input
                 label={"Card Number"}

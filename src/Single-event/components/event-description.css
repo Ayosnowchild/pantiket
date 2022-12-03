@@ -6,7 +6,6 @@
   background: #fcfcfc;
   border: 1px solid #d7dcf8;
   border-radius: 16px;
-  margin: 0px 84px;
 }
 .details-heading {
   font-family: "Syne";
@@ -30,11 +29,14 @@
   display: flex;
   gap: 32px;
 }
+.event-description-container {
+  margin-bottom: 32px;
+}
 @media screen and (min-width: 600px) {
   .event-description-container {
     gap: 24px;
     padding: 32px;
-    margin: 0px 253px;
+    margin-bottom: 64px;
   }
   .details-heading {
     font-size: 24px;

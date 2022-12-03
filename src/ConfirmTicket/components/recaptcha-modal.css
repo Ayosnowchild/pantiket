@@ -1,0 +1,59 @@
+.confirm-ticket-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 50%;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.close-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #eff0fa;
+  border-radius: 8px;
+  border: none;
+}
+.container-title {
+  font-family: "Syne";
+  font-weight: 800;
+  font-size: 20px;
+  color: #94248c;
+}
+.ticket-form-container {
+  display: flex;
+  justify-content: space-between;
+}
+.confirm-ticket-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+.confirm-form-input {
+  width: 100%;
+}
+.confirm-form-btn {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.recaptcha-container {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .confirm-ticket-container {
+    width: 65%;
+  }
+  .container-title {
+    font-weight: 800;
+  }
+}
